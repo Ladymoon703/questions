@@ -181,11 +181,6 @@ mask = [1,0,1]
 3. **二维模式匹配**: 在图像中查找模式
 4. **DNA序列匹配**: 生物信息学应用
 
-## 参考文献
-
-1. Fischer, M. J., & Paterson, M. S. (1974). String-Matching and Other Products. *SIAM-AMS Proceedings*, 7.
-2. Clifford, P., & Clifford, R. (2007). Simple deterministic wildcard matching. *Information Processing Letters*, 101(2), 53-54.
-
 ## 运行示例
 
 ```bash

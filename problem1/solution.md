@@ -118,7 +118,3 @@ def antisymmetric_matvec(a, v):
 5. 算法正是按这个逻辑实现，遍历每个对角线 k，累加其对结果的贡献
 
 因此算法正确。□
-
-## 参考文献
-
-- Golub, G. H., & Van Loan, C. F. (2013). Matrix computations (4th ed.). Johns Hopkins University Press.
