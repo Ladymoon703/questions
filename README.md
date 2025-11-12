@@ -1,59 +1,45 @@
-# 用户登录登出系统
+# 算法作业
 
-一个简单的用户登录登出系统，使用Flask和SQLite数据库。
+这是算法课的4个题目，在branch 001里完成。
 
-## 功能特性
+**注意**: 这个分支是算法作业，主分支(main)是另一个项目（用户登录系统）。
 
-- 用户注册和登录
-- 用户登出
-- 登录历史记录
-- 用户会话管理
-- 美观的Bootstrap界面
+## 文件说明
 
-## 数据库结构
+```
+problem1/  反向对称矩阵那题
+problem2/  FFT字符串匹配
+problem3/  就是整理了下代码结构
+problem4/  逻辑回归预测股票
+```
 
-### 用户表 (User)
-- id: 主键
-- username: 用户名（唯一）
-- email: 邮箱（唯一）
-- password_hash: 密码哈希
-- created_at: 创建时间
-- last_login: 最后登录时间
+## 运行方法
 
-### 登录记录表 (LoginLog)
-- id: 主键
-- user_id: 用户ID（外键）
-- login_time: 登录时间
-- logout_time: 登出时间
-- ip_address: IP地址
-
-## 安装和运行
-
-1. 安装依赖：
+先装依赖：
 ```bash
 pip install -r requirements.txt
 ```
 
-2. 运行应用：
+然后分别运行：
 ```bash
-python app.py
+# 题目2
+python problem2/fft_pattern_matching.py
+
+# 题目4
+python problem4/logistic_regression.py
 ```
 
-3. 访问应用：
-打开浏览器访问 http://localhost:5001
+题目1是理论分析，看solution.md就行。
 
-## 使用说明
+题目3就是这个整体的项目结构。
 
-1. 首先注册一个新用户
-2. 使用注册的用户名和密码登录
-3. 在仪表板查看用户信息
-4. 在个人资料页面查看登录历史
-5. 点击登出按钮退出登录
+## 环境
 
-## 技术栈
+- Python 3.8+
+- 用到的库：numpy, pandas, akshare
 
-- Flask: Web框架
-- SQLAlchemy: ORM数据库操作
-- SQLite: 数据库
-- Bootstrap: 前端UI框架
-- Werkzeug: 密码哈希处理 
+## 说明
+
+题目4的股票数据用的是模拟数据（因为akshare要联网，有时候会超时）。如果要用真实数据，把代码里注释的akshare那部分打开就行。
+
+数据库用的sqlite，会自动创建stock_data.db文件。

@@ -1,0 +1,15 @@
+{
+  "files.eol": "\n",  // 使用LF（Linux风格）
+  "files.insertFinalNewline": true,  // 文件末尾添加空行
+  "files.trimTrailingWhitespace": true,  // 删除行尾空格
+  
+  // Python相关
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.formatting.provider": "autopep8",
+  
+  // Git相关
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  }
+}

@@ -4,6 +4,9 @@ __pycache__/
 *$py.class
 *.so
 .Python
+env/
+venv/
+ENV/
 build/
 develop-eggs/
 dist/
@@ -19,41 +22,40 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-MANIFEST
 
-# Flask
-instance/
-.webassets-cache
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# VS Code (但保留settings.json)
+.vscode/*
+!.vscode/settings.json
 
 # Database
 *.db
 *.sqlite
 *.sqlite3
 
-# Environment variables
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
+# Data files
+*.csv
+*.xlsx
+*.xls
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
+# LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.fdb_latexmk
+*.fls
+*.synctex.gz
 
 # OS
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
 
-# Logs
-*.log 
+# Environment
+.env
+.env.local
